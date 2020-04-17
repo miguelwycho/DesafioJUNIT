@@ -111,6 +111,12 @@ Sexta rodada de teste->
 O teste esperava 0 mas encontroun 10, o valor da pena inocencia esta incorreto.
 
 org.opentest4j.AssertionFailedError: expected: <0> but was: <10>
+
+Correção classe ->
+
+O valor da PENA_INOCENCIA foi alterado de 10 para 0
+
+private int PENA_INOCENCIA = 0;
 	
 
 	

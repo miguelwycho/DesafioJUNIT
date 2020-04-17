@@ -1,0 +1,32 @@
+79756 - Miguel Wychovaniec
+
+CLASSE JUNIT ->
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TesteJulgamentoPrisioneiro {
+
+	@Test
+	public void testeCalcularPena() {
+		JulgamentoPrisioneiro j = new JulgamentoPrisioneiro();
+		int resposta;
+		//A culpado e B culpado = PENA CONDENACAO MUTUA
+		resposta = j.calculaPena("Culpado", "Culpado");
+		assertEquals(5, resposta);
+		//A culpado e B inocente = PENA CONDENACAO INDIVIDUAL
+		resposta = j.calculaPena("Culpado", "Inocente");
+		assertEquals(10, resposta);
+		//A inocente e B culpado = PENA CONDENACAO SIMPLES
+		resposta = j.calculaPena("Inocente", "Culpado");
+		assertEquals(1, resposta);
+		//A inocente e B inocente = PENA INOCENCIA
+		resposta = j.calculaPena("Inocente", "Inocente");
+		assertEquals(0, resposta);
+	}
+	
+
+}
+
+

@@ -87,6 +87,13 @@ Quarta rodada de testes ->
 O teste esperava encontrar uma pena de 1 mas encontrou 11. O valor da pena cumplices esta incorreto.
 
 org.opentest4j.AssertionFailedError: expected: <1> but was: <11>
+
+Correção da classe ->
+
+O valor da PENA_CONDENACAO_CUMPLICES foi alterado de 11 para 1.
+
+private int PENA_CONDENACAO_CUMPLICES = 1;
+
 	
 
 

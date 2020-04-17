@@ -75,6 +75,12 @@ Terceira rodada de testes ->
 O teste esperava encontrar uma pena de 1 (condenação cumplices) mas foi encontrado 10 (condenação individual).
 
 org.opentest4j.AssertionFailedError: expected: <1> but was: <10>
+
+Correção da classe ->
+
+O retorno foi alterado de PENA_CONDENACAO_INDIVIDUAL para PENA_CONDENACAO_CUMPLICES
+
+return PENA_CONDENACAO_CUMPLICES;
 	
 
 

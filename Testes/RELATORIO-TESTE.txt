@@ -81,7 +81,14 @@ Correção da classe ->
 O retorno foi alterado de PENA_CONDENACAO_INDIVIDUAL para PENA_CONDENACAO_CUMPLICES
 
 return PENA_CONDENACAO_CUMPLICES;
+
+Quarta rodada de testes ->
+
+O teste esperava encontrar uma pena de 1 mas encontrou 11. O valor da pena cumplices esta incorreto.
+
+org.opentest4j.AssertionFailedError: expected: <1> but was: <11>
 	
+
 
 
 

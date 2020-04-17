@@ -29,6 +29,7 @@ class TesteJulgamentoPrisioneiro {
 
 }
 
+
 Primeira rodada de testes ->
 
 A classe não consegue ser compilada pois o tipo Resposta não existe.
@@ -37,6 +38,25 @@ java.lang.Error: Unresolved compilation problems:
 	The method calculaPena(Resposta, Resposta) from the type JulgamentoPrisioneiro refers to the missing type Resposta
 
 
+Correção classe java ->
+
+O tipo Resposta foi substituído por String, e as verificações de condições também.
+
+	public int calculaPena(String respostaPrisioneiroA, String respostaPrisioneiroB) {
+		if ("Culpado".equals(respostaPrisioneiroA)) {
+			if ("Culpado".equals(respostaPrisioneiroB) ) {
+				return PENA_CONDENACAO_MUTUA;
+			} else {
+				return PENA_INOCENCIA;
+			}
+		} else {
+			if ("Culpado".equals(respostaPrisioneiroB)) {
+				return PENA_CONDENACAO_INDIVIDUAL;
+			} else {
+				return PENA_CONDENACAO_CUMPLICES;
+			}
+		}
+	}
 
 
 

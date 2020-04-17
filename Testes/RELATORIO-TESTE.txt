@@ -94,6 +94,14 @@ O valor da PENA_CONDENACAO_CUMPLICES foi alterado de 11 para 1.
 
 private int PENA_CONDENACAO_CUMPLICES = 1;
 
+Quinta rodada de testes->
+
+O teste esparava encontrar um valor 0 (PENA_INOCENCIA) mas foi encontrado 1(PENA_CONDENACAO_CUMPLICES)
+
+org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+	
+
+
 	
 
 

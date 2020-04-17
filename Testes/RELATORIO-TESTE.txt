@@ -123,6 +123,12 @@ Setima rodada de testes ->
 O teste esperava o valor 10(PENA_CONDENACAO_INDIVIDUAL) mas encontrou 0(PENA_INOCENCIA)
 
 org.opentest4j.AssertionFailedError: expected: <10> but was: <0>
+
+Correção classe ->
+
+O retorn foi alterado de PENA_INOCENCIA para PENA_CONDENACAO_INDIVIDUAL
+
+return PENA_CONDENACAO_INDIVIDUAL;
 	
 
 

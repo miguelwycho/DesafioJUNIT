@@ -105,6 +105,14 @@ Correção classe ->
 O retorn foi alterado de PENA_CONDENACAO_CUMPLICES para PENA_INOCENCIA.
 
 return PENA_INOCENCIA;
+
+Sexta rodada de teste->
+
+O teste esperava 0 mas encontroun 10, o valor da pena inocencia esta incorreto.
+
+org.opentest4j.AssertionFailedError: expected: <0> but was: <10>
+	
+
 	
 
 

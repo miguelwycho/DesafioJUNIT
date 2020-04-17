@@ -1,6 +1,6 @@
 79756 - Miguel Wychovaniec
 
-CLASSE JUNIT ->
+Classe JUNIT ->
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -57,6 +57,14 @@ O tipo Resposta foi substituído por String, e as verificações de condições 
 			}
 		}
 	}
+
+Segunda rodada de testes ->
+
+O teste esperava encontrar uma pena de 5 mas foi encontrado 15, os valores para as penas não estão corretos.
+
+org.opentest4j.AssertionFailedError: expected: <5> but was: <15>
+	
+
 
 
 
